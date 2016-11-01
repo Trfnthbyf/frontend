@@ -1,0 +1,13 @@
+/*Menu*/
+.menu-list {
+    overflow: hidden;
+}
+.menu-list > li {
+    float: left;
+    list-style: none;
+}
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}

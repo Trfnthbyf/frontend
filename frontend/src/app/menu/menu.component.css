@@ -1,0 +1,16 @@
+.menu-list {
+    overflow: hidden;
+    margin: 20px 0;
+}
+.menu-list > li {
+    float: left;
+    list-style: none;
+}
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu-list a:hover {
+    text-decoration: underline;
+}

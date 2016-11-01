@@ -1,0 +1,95 @@
+.confirm {
+  max-width: 450px;
+  padding: 42px 37px 56px;
+  margin: auto;
+  box-sizing: border-box;
+  background: #fff;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.input {
+  border: 1px solid #a5c1dd;
+  width: 100%;
+  padding: 0 5px 0 20px;
+  box-sizing: border-box;
+  line-height: 60px;
+  font-size: 17px;
+}
+::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #1f3134;
+  line-height: 24px;
+}
+::-moz-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1f3134;
+}
+:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1f3134;
+}
+input:-moz-placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: #1f3134;
+}
+
+.btn {
+  border-radius: 2px;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 18px;
+}
+.confirm-button {
+  background: #00c4ee;
+  color: #fff;
+}
+.confirm-button:hover {
+  background: #47defe;
+  transition: background 1s linear;
+}
+.confirm-button:active {
+  background: #00b9e1;
+}
+.form-social {
+  color: #91b0cf;
+  font-size: 16px;
+  padding: 16px 0 20px;
+  flex: 0 0 55%;
+}
+.icon-linkedin-logo:before {
+  content: "\e903";
+}
+.btn-lnkdin {
+  font-family: 'icomoon';
+  background: #0077b5;
+  width: 40px;
+  height: 40px;
+  border: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*Repeated reset-password*/
+
+input.error {
+  border: 1px solid #fb574a;
+}
+.m-error {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fb574a;
+}

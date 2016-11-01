@@ -1,0 +1,45 @@
+<div class="confirm">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+    <div class="form-group">
+      <input disabled
+             type="text"
+             class="input confirm-email"
+             name="email"
+             formControlName="email"
+             placeholder="Mycompany@gmail.com"/>
+    </div>    
+    <div [hidden]="!(username.value === '' && username.touched)" class="message m-error">Name is required</div>
+    <div class="form-group">
+      <input type="text"
+             class="input confirm-name"
+             name="username"
+             formControlName="username"
+             [class.error]="!username.valid && username.touched"
+             placeholder="Name"/>
+    </div>
+    <div [hidden]="!(password.value === '' && password.touched)" class="message m-error">Password is required</div>
+    <div class="form-group">
+      <input type="password"
+             class="input confirm-password"
+             name="password"
+             formControlName="password"
+             [class.error]="!password.valid && password.touched"
+             placeholder="Password"/>
+    </div>
+    <div [hidden]="!(confirmPassword.value === '' && confirmPassword.touched)" class="message m-error">Confirm password is required</div>
+    <div class="form-group">      
+      <input type="password"
+             class="input confirm-password"
+             name="confirmPassword"
+             formControlName="confirmPassword"
+             placeholder="Password Verify"/>
+    </div>
+    <div class="form-group">
+      <p class="form-social">Connect your social profiles to Building Blocks</p>
+      <a href="http://192.168.100.8:1337/login/linkedin" class="btn-sml btn-lnkdin">
+        <span class="icon-linkedin-logo"></span>
+      </a>
+    </div>
+    <button type="submit" class="confirm-button btn">Confirm</button>
+  </form>
+</div>

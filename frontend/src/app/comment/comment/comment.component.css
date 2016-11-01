@@ -1,0 +1,15 @@
+.comment-item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    color: #000;
+}
+.comments button {
+    padding: 5px;
+    border-radius: 5px;
+}
+.comments input {
+    width: 50%;
+}

@@ -1,0 +1,27 @@
+<div class="form-container">
+  <h3 class="form-title">Log In</h3>
+  <form *ngIf="active" novalidate #signupForm="ngForm" (ngSubmit)="login()" method="POST">
+    <div>
+      <input type="text"
+             name="useremail"
+             #useremail="ngModel"
+             [(ngModel)]="model.useremail"
+             placeholder="Enter your email"
+             required/>
+    </div>
+    <div>
+      <input type="password"
+            name="password"
+            [(ngModel)]="model.password"
+            #password="ngModel"
+            minlength="8"
+            required
+            placeholder="Enter your password"/>
+    </div>
+    <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    <button type="submit" class="form-button">Log In</button>
+  </form>
+</div>
+<div>
+  empty div
+</div>

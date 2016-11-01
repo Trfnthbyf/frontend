@@ -1,0 +1,12 @@
+<div class="comments">
+  <h3>User can left comments here</h3>
+  <label>Comment</label>
+  <input type="text" #newComment (keyup.enter)="addComment(newComment.value); newComment.value='' ">
+  <button (click)="addComment(newComment.value); newComment.value=''">Send</button>
+  <div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
+  <ul>
+    <li *ngFor="let comment of comments" class="comment-item">
+      {{comment.comment}}
+    </li>
+  </ul>
+</div>

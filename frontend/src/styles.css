@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #321467;
+    font: 14px/24px 'Open Sans', sans-serif;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+
+/*FORMS*/
+.form-title {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.form-button,
+input[type=text],
+input[type=password]  {
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-top: 10px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+::-moz-placeholder {  
+    font-style: italic;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+}
+input:-moz-placeholder { 
+    font-style: italic;  
+}
+.form-button {
+    background: #e1d1ff;
+    color: #321467;
+    font-size: 16px;
+}
+.container {
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 20px;
+}
+@media screen and (min-width: 480px) {
+    body {
+        background-color: #4d298c;
+    }
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #4f598c;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #4d008c;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #4d098c;
+    }
+}

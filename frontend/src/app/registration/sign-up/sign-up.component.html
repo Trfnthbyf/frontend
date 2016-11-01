@@ -1,0 +1,36 @@
+<div class="form-container">
+  <h3 class="form-title">Sign Up</h3>
+  <form *ngIf="active" novalidate #f="ngForm" (ngSubmit)="f.valid && sendUserForm()">    
+    <div form="form-group">
+      <input type="text" name="userName" placeholder="Name" [(ngModel)]="user.userName" #userName="ngModel" required/>
+    </div>
+    <div form="form-group">
+      <input type="text" name="company" placeholder="Company" [(ngModel)]="user.company" #company="ngModel" required/>
+    </div>
+    <div form="form-group">
+      <input type="text"
+             name="email"
+             disabled
+             placeholder="Email"
+             [(ngModel)]="user.email"
+             #email="ngModel"
+             pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+             required
+             value="user.email"/>
+    </div>
+    <div form="form-group">
+      <input type="password"
+             name="password"
+             placeholder="Password"
+             [(ngModel)]="user.password"
+             #password="ngModel"
+             minlength=6 required/>
+    </div>
+    <div form="form-group">
+      <input type="password" name="confirmPassword" placeholder="Confirm password" validateEqual="password" [ngModel]="user.confirmPassword" minlength=6 required #confirmPassword="ngModel"/>
+      <small [hidden]="confirmPassword.valid ||  (confirmPassword.pristine && !f.submitted)">
+        Password mismatch
+    </small>
+    </div>
+    <button type="submit" class="form-button">Sign Up</button>
+  </form>
